@@ -7,6 +7,14 @@ class CartPage extends BasePage {
     this.checkoutButton = page.locator('#checkout');
   }
 
+   async getCartItemNames() {
+    return this.cartItems.locator('.inventory_item_name').allTextContents();
+  }
+
+  async getCartItemCount() {
+    return this.cartItems.count();
+  }
+
   async proceedToCheckout() {
     await this.waitAndClick(this.checkoutButton);
   }
