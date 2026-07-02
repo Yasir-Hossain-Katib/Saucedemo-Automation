@@ -9,7 +9,7 @@ class CheckoutPage extends BasePage {
     this.lastNameInput = page.locator('#last-name');
     this.postalCodeInput = page.locator('#postal-code');
     this.continueButton = page.locator('#continue');
-    this.errorMessage = page.locator('[data-test="error-button"]');
+    this.errorMessage = page.locator('[data-test="error"]');
 
     // Step two: order overview
     this.finishButton = page.locator('#finish');

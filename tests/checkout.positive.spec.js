@@ -20,7 +20,7 @@ test.describe('Checkout flow - Positive Test Case', () => {
     //  Add product to cart
     await inventoryPage.addProductToCart(product);
     const cartCount = await inventoryPage.getCartCount();
-    expect(cartCount).toBe(1); // real assertion, not just a click
+    expect(cartCount).toBe(1); 
 
     //  Go to cart and verify the correct item is there
     await inventoryPage.goToCart();
